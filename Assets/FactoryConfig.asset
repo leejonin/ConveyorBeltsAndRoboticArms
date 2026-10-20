@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bb4304d202b43468993a3f3aa63095, type: 3}
+  m_Name: FactoryConfig
+  m_EditorClassIdentifier: 
+  robotArmCount: 3
+  useThreeRegionLogistics: 1
+  regionCount: 3
+  robotArmPrefab: {fileID: 3718535248992637037, guid: d621a291b7d0c5e408dad10081158277, type: 3}
+  robotArmRigBinding: {fileID: 11400000, guid: 1decbd4bfed5bbe4889511f457fa6662, type: 2}
+  robotArmPoseSet: {fileID: 11400000, guid: 2a3b4c5d6e7f8091a2b3c4d5e6f70819, type: 2}
+  beltSpeed: 1.2
+  beltLength: 12
+  spawnIntervalMin: 1
+  spawnIntervalMax: 5
+  mismatchInjectionRate: 0.25
+  errorLogisticsSpawnRate: 0.005
+  errorLogisticsBurstRate: 0.001
+  errorLogisticsBurstDurationSeconds: 10
+  defaultConsecutiveErrorAlertThreshold: 5
+  classifierConfidenceThreshold: 0.55
+  maxRecognitionRetries: 2
+  urgentPackageRate: 0.12
+  highPriorityPackageRate: 0.28
+  deadlineMinMinutes: 8
+  deadlineMaxMinutes: 22
+  congestionCautionQueue: 3
+  congestionWarningQueue: 5
+  congestionSevereQueue: 7
+  congestionSpawnScaleFactor: 1.35
+  defaultBrainIntervalMinutes: 30
+  triggerBrainOnError: 0
+  dashboardPort: 8080
+  dashboardSseIntervalSeconds: 1

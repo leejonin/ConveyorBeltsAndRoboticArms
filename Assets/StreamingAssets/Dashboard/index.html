@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>스마트팩토리 제어판</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <img src="/logo.svg" alt="제어판 로고" class="logo" />
+    <h1>스마트팩토리 제어판</h1>
+  </header>
+  <main>
+    <section id="emergencyBanner" class="emergency-banner hidden" role="alert">
+      <strong>긴급</strong>
+      <span id="emergencyBannerText"></span>
+    </section>
+    <section id="summary">
+      <div class="card"><h3>불일치 물품</h3><p id="mismatchCount">0</p></div>
+      <div class="card"><h3>인식 실패</h3><p id="recognitionFailureCount">0</p></div>
+      <div class="card"><h3>미처리</h3><p id="unprocessedCount">0</p></div>
+      <div class="card"><h3>에러 물류</h3><p id="errorLogisticsCount">0</p></div>
+      <div class="card"><h3>연속 에러 물류</h3><p id="consecutiveErrorLogisticsCount">0</p></div>
+    </section>
+    <section>
+      <h2>물류센터 (시뮬레이션)</h2>
+      <div id="logisticsPanel" class="panel"></div>
+      <button type="button" id="mitigateCongestion">혼잡 완화(스폰 간격)</button>
+      <button type="button" id="loadOpsReport">운영 보고서</button>
+      <pre id="opsReport" class="ops-report"></pre>
+    </section>
+    <section>
+      <h2>컨베이어</h2>
+      <div id="conveyorPanel" class="panel"></div>
+    </section>
+    <section>
+      <h2>로봇팔</h2>
+      <div id="robotsPanel" class="grid"></div>
+    </section>
+    <section>
+      <h2>중앙뇌</h2>
+      <div id="brainPanel" class="panel"></div>
+      <label>
+        연속 에러 물류 알림 임계(개)
+        <select id="consecutiveErrorThresholdSelect">
+          <option value="3">3</option>
+          <option value="5" selected>5</option>
+          <option value="7">7</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+        </select>
+      </label>
+      <label>
+        API 호출 주기(분)
+        <select id="intervalSelect">
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30" selected>30</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+          <option value="60">60</option>
+          <option value="120">120</option>
+        </select>
+      </label>
+      <button id="triggerBrain">즉시 분석(디버그)</button>
+    </section>
+    <section>
+      <h2>알림</h2>
+      <ul id="notifications"></ul>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>

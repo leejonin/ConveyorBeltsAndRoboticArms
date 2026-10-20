@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f989743383a9d4da16e0a4a5e2e76b, type: 3}
+  m_Name: RoboticArmRigBinding
+  m_EditorClassIdentifier: 
+  localPositionOffset: {x: 0, y: 0, z: 0}
+  localEulerOffset: {x: 0, y: 0, z: 0}
+  localScale: {x: 1, y: 1, z: 1}
+  visualRootPath: 
+  jointPaths: []
+  principalPath: Principal
+  brazo1Path: Brazo1
+  brazo2Path: Brazo2
+  brazo3Path: Brazo3
+  gancho1Path: Gancho1
+  gancho2Path: Gancho2
+  endEffectorPath: Piston_end
+  gripCenterPath: CenterOfTheGripper
+  principalYMin: -360
+  principalYMax: 360
+  principalZMin: -90
+  principalZMax: 90
+  brazoZMin: -120
+  brazoZMax: 120
+  gancho1ZMin: -50
+  gancho1ZMax: -15
+  gancho2ZMin: 15
+  gancho2ZMax: 50

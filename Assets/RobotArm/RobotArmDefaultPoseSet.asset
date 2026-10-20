@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c4e8f2a9b1d3e5f6a7b8c9d0e1f2a3b, type: 3}
+  m_Name: RobotArmDefaultPoseSet
+  m_EditorClassIdentifier: 
+  poses:
+  - poseName: Idle
+    principalY: 0
+    principalZ: 0
+    brazo1Z: 0
+    brazo2Z: 30
+    brazo3Z: -20
+    gancho1Z: -15
+    gancho2Z: 15
+  - poseName: ApproachPick
+    principalY: 25
+    principalZ: -15
+    brazo1Z: -40
+    brazo2Z: 50
+    brazo3Z: -30
+    gancho1Z: -15
+    gancho2Z: 15
+  - poseName: GripClosed
+    principalY: 25
+    principalZ: -15
+    brazo1Z: -40
+    brazo2Z: 50
+    brazo3Z: -30
+    gancho1Z: -50
+    gancho2Z: 50
+  - poseName: ApproachDrop
+    principalY: -35
+    principalZ: 10
+    brazo1Z: -20
+    brazo2Z: 40
+    brazo3Z: -10
+    gancho1Z: -50
+    gancho2Z: 50
+  - poseName: GripOpen
+    principalY: -35
+    principalZ: 10
+    brazo1Z: -20
+    brazo2Z: 40
+    brazo3Z: -10
+    gancho1Z: -15
+    gancho2Z: 15
+  - poseName: LiftHold
+    principalY: 25
+    principalZ: -5
+    brazo1Z: -40
+    brazo2Z: 55
+    brazo3Z: -15
+    gancho1Z: -50
+    gancho2Z: 50
+  - poseName: ReachPick
+    principalY: 27
+    principalZ: 12
+    brazo1Z: 12
+    brazo2Z: 8
+    brazo3Z: -59
+    gancho1Z: -15
+    gancho2Z: 15
+  - poseName: GripClosedAtReach
+    principalY: 27
+    principalZ: 12
+    brazo1Z: 12
+    brazo2Z: 8
+    brazo3Z: -59
+    gancho1Z: -50
+    gancho2Z: 50
